@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SharpHeaderCookie</name>
+    </assembly>
+    <members>
+        <member name="T:SharpHeaderCookie.BrowserConfig">
+            <summary>
+            ブラウザーの情報クラス。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.IBrowserConfig">
+            <summary>
+            ブラウザーの情報インターフェイス
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.BrowserEngine">
+            <summary>
+            ブラウザー描画エンジン
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.CookiePath">
+            <summary>
+            クッキーファイルの絶対パス
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.Display">
+            <summary>
+            拡張表示
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.XmlText">
+            <summary>
+            シリアライズしたxmlテキスト
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.xmlData">
+            <summary>
+            シリアライズしたxmlバイナリ
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.JsonText">
+            <summary>
+            シリアライズしたjsonテキスト
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserConfig.JsonData">
+            <summary>
+            シリアライズしたjsonバイナリ
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.#ctor">
+            <summary>
+            クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.#ctor(System.String,SharpHeaderCookie.BrowserEngine,System.String)">
+            <summary>
+            クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="name">名称</param>
+            <param name="browserEngine">ブラウザー描画エンジン</param>
+            <param name="cookiePath">クッキーファイル絶対パス</param>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.AddDisplay(System.String)">
+            <summary>
+            表示を拡張します。
+            </summary>
+            <param name="text">追加される文字列</param>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.ParseXml(System.String)">
+            <summary>
+            シリアライズされたxmlテキストからパース
+            </summary>
+            <param name="xmlText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.ParseXml(System.Byte[])">
+            <summary>
+            シリアライズされたxmlバイナリからパース
+            </summary>
+            <param name="xmlBytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.ParseJson(System.String)">
+            <summary>
+            シリアライズされたjsonテキストからパース
+            </summary>
+            <param name="jsonText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.ParseJson(System.Byte[])">
+            <summary>
+            シリアライズされたjsonバイナリからパース
+            </summary>
+            <param name="jsonBytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserConfig.ToString">
+            <summary>
+            現在のオブジェクトを表す文字列を返します。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.BrowserEngine">
+            <summary>
+            ブラウザー描画エンジン
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.CookiePath">
+            <summary>
+            クッキーファイルの絶対パス
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.Display">
+            <summary>
+            拡張表示
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.XmlText">
+            <summary>
+            シリアライズしたxmlテキスト
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.xmlData">
+            <summary>
+            シリアライズしたxmlバイナリ
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.JsonText">
+            <summary>
+            シリアライズしたjsonテキスト
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserConfig.JsonData">
+            <summary>
+            シリアライズしたjsonバイナリ
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.IGetBrowserCookie">
+            <summary>
+            ブラウザークッキーインターフェイス
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.IGetBrowserCookie.CookieHeader(System.Uri,System.String,System.Boolean)">
+            <summary>
+            URI と CookieName から HttpRequestHeader の Cookie 値を取得します。
+            CookieNameにnullを渡すとすべてのCookie値を取得します。
+            </summary>
+            <param name="uri">URI</param>
+            <param name="cookieName">CookieName</param>
+            <param name="cache">キャッシュを利用するかどうか</param>
+            <returns>System.Net.HttpRequestHeader.Cookie</returns>
+            <exception cref="T:SharpHeaderCookie.LibHeaderCookieException"></exception>
+        </member>
+        <member name="M:SharpHeaderCookie.IGetBrowserCookie.CookieHeader(System.Uri,System.String[],System.Boolean)">
+            <summary>
+            URI と CookieName 配列から HttpRequestHeader の Cookie 値を取得します。
+            </summary>
+            <param name="uri">URI</param>
+            <param name="cookieNames">CookieName配列</param>
+            <param name="cache">キャッシュを利用するかどうか</param>
+            <returns>System.Net.HttpRequestHeader.Cookie</returns>
+            <exception cref="T:SharpHeaderCookie.LibHeaderCookieException"></exception>
+        </member>
+        <member name="M:SharpHeaderCookie.IGetBrowserCookie.Cookies(System.Uri,System.String,System.Boolean)">
+            <summary>
+            URI と CookieName から System.Net.Cookie 配列を取得します。
+            CookieContainerはあまりよろしくないのでこの返り値をCookieContainerに使用することは推奨しません。
+            余程のことがない限りCookieHeader APIをご利用ください。
+            </summary>
+            <param name="uri">URI</param>
+            <param name="cookieName">CookieName</param>
+            <param name="cache">キャッシュを利用するかどうか</param>
+            <returns>System.Net.Cookie[]</returns>
+            <exception cref="T:SharpHeaderCookie.LibHeaderCookieException"></exception>
+        </member>
+        <member name="M:SharpHeaderCookie.IGetBrowserCookie.CacheClear">
+            <summary>
+            キャッシュをクリアします。
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IGetBrowserCookie.BrowserConfig">
+            <summary>
+            ブラウザの情報。
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.Browsers.AGetTridentBrowserCookie.firstCache">
+            <summary>
+            URI+CookieName(SHA1HASH), CookieValue
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.Browsers.AGetTridentBrowserCookie.secondCache">
+            <summary>
+            BaseDomain(SHA1HASH), BrowserCookieCollection
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserEngines.Browsers.AGetTridentBrowserCookie.GetWin32ApiTridentCookie(System.Uri,System.String)">
+            <summary>
+            IEノーマルのCookieValueを取得します。
+            </summary>
+            <param name="uri"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserEngines.Browsers.AGetTridentBrowserCookie.GetWin32ApiProtectedModeCookie(System.Uri,System.String)">
+            <summary>
+            IE保護モードのCookieValueを直接Win32Apiを使用して取得します。
+            </summary>
+            <param name="uri"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserEngines.Browsers.AGetTridentBrowserCookie.GetProtectedModeCookie(System.Uri,System.String)">
+            <summary>
+            IE保護モードのCookieValueを外部プログラムを使用して取得します。
+            </summary>
+            <param name="uri"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserEngines.Browsers.Edge.GetForciblyEdgeCookie(System.String)">
+            <summary>
+            EdgeのCookieValueを取得します。SecondCache
+            </summary>
+            <param name="baseDomain"></param>
+        </member>
+        <member name="T:SharpHeaderCookie.UserControls.BrowserControlGeneral">
+            <summary>
+            簡易ブラウザー選択コントロールクラス
+            SelectedBrowserCookieプロパティ
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlGeneral.#ctor">
+            <summary>
+            簡易ブラウザー選択コントロールクラスのインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlGeneral.#ctor(SharpHeaderCookie.IGetBrowserCookie)">
+            <summary>
+            簡易ブラウザー選択コントロールクラスのインスタンスを初期化します。
+            </summary>
+            <param name="browserCookie">選択ブラウザ</param>
+        </member>
+        <member name="F:SharpHeaderCookie.UserControls.BrowserControlGeneral.components">
+            <summary> 
+            必要なデザイナー変数です。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlGeneral.Dispose(System.Boolean)">
+            <summary> 
+            使用中のリソースをすべてクリーンアップします。
+            </summary>
+            <param name="disposing">マネージ リソースが破棄される場合 true、破棄されない場合は false です。</param>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlGeneral.InitializeComponent">
+            <summary> 
+            デザイナー サポートに必要なメソッドです。このメソッドの内容を 
+            コード エディターで変更しないでください。
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.BrowserControlGeneral.SelectedBrowserCookie">
+            <summary>
+            選択状態のBrowserCookieを取得または設定します。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.UserControls.BrowserControlNiconico">
+            <summary>
+            niconico専用簡易ブラウザー選択コントロールクラス
+            SelectedBrowserCookieプロパティ
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlNiconico.#ctor">
+            <summary>
+            簡易ブラウザー選択コントロールクラスのインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlNiconico.#ctor(SharpHeaderCookie.IGetBrowserCookie)">
+            <summary>
+            簡易ブラウザー選択コントロールクラスのインスタンスを初期化します。
+            </summary>
+            <param name="browserCookie">選択ブラウザ</param>
+        </member>
+        <member name="F:SharpHeaderCookie.UserControls.BrowserControlNiconico.components">
+            <summary> 
+            必要なデザイナー変数です。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlNiconico.Dispose(System.Boolean)">
+            <summary> 
+            使用中のリソースをすべてクリーンアップします。
+            </summary>
+            <param name="disposing">マネージ リソースが破棄される場合 true、破棄されない場合は false です。</param>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.BrowserControlNiconico.InitializeComponent">
+            <summary> 
+            デザイナー サポートに必要なメソッドです。このメソッドの内容を 
+            コード エディターで変更しないでください。
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.BrowserControlNiconico.SelectedBrowserCookie">
+            <summary>
+            選択状態のBrowserCookieを取得または設定します。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.IBrowserCookie">
+            <summary>
+            BrowserCookieインターフェイス
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserCookie.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserCookie.Value">
+            <summary>
+            値
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserCookie.Host">
+            <summary>
+            ホスト名
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserCookie.Path">
+            <summary>
+            パス
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.IBrowserCookie.Expiry">
+            <summary>
+            有効期限
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.BrowserEngine">
+            <summary>
+            ブラウザー描画エンジン
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngine.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngine.Trident">
+            <summary>
+            Internet Explorer
+            Internet Explorer Protected Mode
+            Internet Explorer Enhanced Protected Mode
+            Sleipnir
+            Grani
+            Lunascape
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngine.Gecko">
+            <summary>
+            Mozilla Firefox
+            SeaMonkey
+            Pale Moon
+            Comodo IceDoragon
+            Cyberfox
+            Nightingale
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngine.Blink">
+            <summary>
+            Chromium
+            Google Chrome
+            Cool Novo
+            Sleipnir
+            Opera
+            Vivaldi
+            Super Bird
+            Kinza
+            Tungsten
+            Comodo Dragon
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngine.WebKit">
+            <summary>
+            disable
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngine.Edge">
+            <summary>
+            Project Spartan
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.BrowserEngines.AppData">
+            <summary>
+            アプリケーションデータフォルダ
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.AppData.Local">
+            <summary>
+            Local
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.AppData.LocalLow">
+            <summary>
+            LocalLow
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.AppData.Roaming">
+            <summary>
+            Roaming
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.Browsers.AGetSqliteBrowserCookie.firstCache">
+            <summary>
+            URI+CookieName(SHA1HASH), CookieValue
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.BrowserEngines.Browsers.AGetSqliteBrowserCookie.secondCache">
+            <summary>
+            BaseDomain(SHA1HASH), BrowserCookieCollection
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.BrowserEngines.DefaultBrowser">
+            <summary>
+            ブラウザのデフォルト情報クラス。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.BrowserEngines.IDefaultBrowser">
+            <summary>
+            ブラウザのデフォルト情報インターフェイス
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserEngines.IDefaultBrowser.BrowserName">
+            <summary>
+            ブラウザ名
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserEngines.IDefaultBrowser.ApplicationData">
+            <summary>
+            アプリケーションデータフォルダ
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserEngines.IDefaultBrowser.PartialDirectory">
+            <summary>
+            ディレクトリ
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserEngines.DefaultBrowser.#ctor">
+            <summary>
+            クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.BrowserEngines.DefaultBrowser.#ctor(System.String,SharpHeaderCookie.BrowserEngines.AppData,System.String)">
+            <summary>
+            クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="browserName">ブラウザ名</param>
+            <param name="applicationData">アプリケーションデータフォルダ</param>
+            <param name="PartialDirectory">ディレクトリ</param>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserEngines.DefaultBrowser.BrowserName">
+            <summary>
+            ブラウザ名
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserEngines.DefaultBrowser.ApplicationData">
+            <summary>
+            アプリケーションデータフォルダ
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.BrowserEngines.DefaultBrowser.PartialDirectory">
+            <summary>
+            ディレクトリ
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.UserControls.ComboBoxBrowserEngine">
+            <summary>
+            ブラウザー描画エンジンComboBoxクラス。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxBrowserEngine.#ctor">
+            <summary>
+            ブラウザー描画エンジンComboBoxクラスのインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxBrowserEngine.OnCreateControl">
+            <summary>
+            CreateControl()メソッドを発生させるらしい
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxBrowserEngine.DropDownStyle">
+            <summary>
+            DropDownList
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxBrowserEngine.SelectedBrowserEngine">
+            <summary>
+            選択中のブラウザー描画エンジンを取得します。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.UserControls.ComboBoxGeneral">
+            <summary>
+            ブラウザークッキーComboBoxクラス
+            SelectedBrowserCookieプロパティ
+            CacheClearメソッド
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxGeneral.#ctor">
+            <summary>
+            ブラウザークッキーComboBoxクラスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxGeneral.CacheClear">
+            <summary>
+            BrowserCookieのキャッシュをクリアします。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxGeneral.OnCreateControl">
+            <summary>
+            CreateControl()メソッドを発生させるらしい
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxGeneral.DropDownStyle">
+            <summary>
+            DropDownList
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxGeneral.SelectedBrowserCookie">
+            <summary>
+            選択中のブラウザークッキーインターフェイスを取得または設定します。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.UserControls.ComboBoxNiconico">
+            <summary>
+            niconico専用ComboBoxクラス。
+            SelectedBrowserCookieプロパティ
+            CacheClearメソッド
+            NiconicoRefreshメソッド
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxNiconico.#ctor">
+            <summary>
+            niconico専用ComboBoxクラスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxNiconico.CacheClear">
+            <summary>
+            BrowserCookieのキャッシュをクリアします。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxNiconico.NiconicoRefresh">
+            <summary>
+            niconicoユーザー名（プロフィール名）を取得します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.UserControls.ComboBoxNiconico.OnCreateControl">
+            <summary>
+            CreateControl()メソッドを発生させるらしい
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxNiconico.IsAcquire">
+            <summary>
+            niconicoユーザー名（プロフィール名）を取得中
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxNiconico.UserAgent">
+            <summary>
+            User_Agentを取得または設定します。
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxNiconico.DropDownStyle">
+            <summary>
+            DropDownList
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.UserControls.ComboBoxNiconico.SelectedBrowserCookie">
+            <summary>
+            選択中のブラウザークッキーインターフェイスを取得または設定します。
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.LibHeaderCookie">
+            <summary>
+            HeaderCookieライブラリクラス。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookie.#cctor">
+            <summary>
+            ブラウザークッキーインターフェイスを生成します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookie.Instance">
+            <summary>
+            すべてのブラウザークッキーインターフェイスを取得します。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookie.Instance(SharpHeaderCookie.BrowserConfig)">
+            <summary>
+            ブラウザークッキーインターフェイスを取得します。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookie.#ctor">
+            <summary>
+            シングルトン
+            </summary>
+        </member>
+        <member name="T:SharpHeaderCookie.LibHeaderCookieException">
+            <summary>
+            ライブラリの実行中に発生するエラーを表します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookieException.#ctor">
+            <summary>
+            クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookieException.#ctor(System.String)">
+            <summary>
+            指定したエラーメッセージを使用してクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SharpHeaderCookie.LibHeaderCookieException.#ctor(System.String,System.Exception)">
+            <summary>
+            指定したエラーメッセージとこの例外の原因である内部例外への参照を使用してクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:SharpHeaderCookie.Utility.GetBaseDomain(System.Uri,System.String@)">
+            <summary>
+            URIからサブドメインを除いたドメインを得る
+            </summary>
+            <param name="uri"></param>
+            <param name="baseDomain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.Utility.GetBaseDomain2(System.Uri,System.String@)">
+            <summary>
+            URIからサブドメインを除いたドメインを得る
+            サブドメインを一つずつ削りながらDNS名を引く
+            検証した結果使えない
+            </summary>
+            <param name="uri"></param>
+            <param name="baseDomain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.Utility.SHA1Hash(System.String)">
+            <summary>
+            SHA1のハッシュ値を得る
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpHeaderCookie.Utility.SystemTimeToDateTime(SharpHeaderCookie.Win32Api.SYSTEMTIME)">
+            <summary>
+            SYSTEMTIMEをDateTimeに変換する
+            </summary>
+            <param name="systemTime"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SharpHeaderCookie.Utility.AppFolder">
+            <summary>
+            アプリケーションフォルダ
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.Utility.BaseFolder">
+            <summary>
+            実行ファイルフォルダ
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.Utility.IsNetworkAvailability">
+            <summary>
+            ネットワークに接続されているか
+            Trueであってもインターネットに接続されているかどうかはわからない
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.Utility.GatewayIPAddress">
+            <summary>
+            GatewayIPAddressを取得する。存在しなければnullを返す。
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.Utility.IPv4Address">
+            <summary>
+            IPAddress v4を取得する。存在しなければnullを返す。
+            </summary>
+        </member>
+        <member name="P:SharpHeaderCookie.Utility.IPv6Address">
+            <summary>
+            IPAddress v6を取得する。存在しなければnullを返す。
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.Win32Api.INTERNET_COOKIE_THIRD_PARTY">
+            <summary>
+            Retrieves only third-party cookies if policy explicitly allows all cookies for the specified URL to be retrieved.
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.Win32Api.INTERNET_COOKIE_HTTPONLY">
+            <summary>
+            Enables the retrieval of cookies that are marked as "HTTPOnly".
+            Do not use this flag if you expose a scriptable interface, because this has security implications.
+            It is imperative that you use this flag only if you can guarantee that you will never expose the cookie to third-party code by way of an extensibility mechanism you provide.
+            Version:  Requires Internet Explorer 8.0 or later.
+            </summary>
+        </member>
+        <member name="F:SharpHeaderCookie.Win32Api.INTERNET_FLAG_RESTRICTED_ZONE">
+            <summary>
+            Retrieves only cookies that would be allowed if the specified URL were untrusted; that is, if it belonged to the URLZONE_UNTRUSTED zone.
+            </summary>
+        </member>
+    </members>
+</doc>

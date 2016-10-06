@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nicoviewLink</name>
+    </assembly>
+    <members>
+        <member name="M:nicoviewLink.RemoteObject.connectLive(System.String)">
+            <summary>
+            放送に接続
+            </summary>
+            <param name="liveid">放送ID</param>
+        </member>
+        <member name="M:nicoviewLink.RemoteObject.RemotePostOwnerComment(System.String,System.String,System.String)">
+            <summary>
+            運営コメント送信
+            </summary>
+            <param name="name">名前</param>
+            <param name="message">メッセージ</param>
+            <param name="command">コマンド</param>
+        </member>
+        <member name="M:nicoviewLink.RemoteObject.RemotePostBSPComment(System.String,System.String,System.String)">
+            <summary>
+            BSPコメント送信
+            </summary>
+            <param name="name">名前</param>
+            <param name="message">メッセージ</param>
+            <param name="color">色</param>
+        </member>
+        <member name="M:nicoviewLink.RemoteObject.RemotePostComment(System.String,System.String)">
+            <summary>
+            通常コメント送信
+            </summary>
+            <param name="message">メッセージ</param>
+            <param name="command">コマンド</param>
+        </member>
+    </members>
+</doc>

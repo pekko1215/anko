@@ -1,0 +1,73 @@
+【 ソフト名 】MMDAgent棒読み化＋音声認識プラグイン
+【 製 作 者 】カラオケ居酒屋「めがね」（にょんにょん）
+【  種  別  】フリーソフト
+【 開発環境 】VisualStudio2010Express
+【 動作環境 】WindowsXP/Vista/7
+【バージョン】2.00
+
+【ファイル名】ankoMMDAgent.dll
+【同梱ファイル】
+  ankoMMDAgent.dll
+  このファイル
+  
+【 ウ ェ ブ 】http://com.nicovideo.jp/community/co278640
+【 E - mail 】neko_nyon@livedoor.com
+
+　 (情報共有のため質問はコミュ掲示板でお願いします）
+
+---------- ----------
+◇ 概要 ◇
+MMDAgentを音声出力、音声入力のソフトウェアとして応用するためのプラグインです。
+
+
+◇ 動作条件 ◇
+.Netframework4
+
+◇ インストール ◇
+下記アドレス、またはwikiの検索欄に「MMDAgent」と入れていただければ表示されますので、参照下さい
+
+http://yarimasu.ankochan.net/d/plugin%a1%a7MMDAgent%cb%c0%c6%c9%a4%df%b2%bd%a1%dc%b2%bb%c0%bc%c7%a7%bc%b1%a5%d7%a5%e9%a5%b0%a5%a4%a5%f3
+
+解凍したフォルダー毎、アンコちゃんのpluginsにコピーしていただいても認識します
+
+
+◇ アンインストール ◇
+
+　インストールのときにコピーしたファイルを削除するだけです
+
+◇ つかいかた ◇
+
+詳細はwikiを御覧ください。
+http://wiki.livedoor.jp/neko_nyon/
+
+◇ ご質問（軽い物） ◇
+
+http://com.nicovideo.jp/community/co278640
+
+◇ 不具合報告・ご質問（不具合・要望をふくむ） ◇
+
+http://wiki.livedoor.jp/neko_nyon/bbs
+
+
+◇ 免責 ◇
+本ソフトウェアを利用した上での、障害、ニコニコ動画からのアカウント停止などのトラブルについて一切
+責任は負わないこととします。
+また、本ソフトウェアはフリーウェアであり、バグ等についても特に修正する義務は負わないこととします。
+
+◇ 転載 ◇
+転載は許可しない限りは許可しないものとします。
+
+
+◇ FAQ・既知のバグ ◇
+下記を御覧ください
+http://wiki.livedoor.jp/neko_nyon/
+
+
+----------
+◇ 連絡先 ◇
+Web : http://com.nicovideo.jp/community/co278640
+E-mail : neko_nyon@livedoor.com
+
+
+◇ 履歴 ◇
+2012/4/29	2.00		ギッシリアンコちゃん用を移植＆MMDAgent1.2への対応

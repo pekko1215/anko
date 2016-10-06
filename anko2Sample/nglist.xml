@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nglist>
+	<ngitem>
+		<old>しね</old>
+		<new>し.ね</new>
+	</ngitem>
+	<ngitem>
+		<old>しネ</old>
+		<new>し.ネ</new>
+	</ngitem>
+	<ngitem>
+		<old>しﾈ</old>
+		<new>し.ﾈ</new>
+	</ngitem>
+	<ngitem>
+		<old>シね</old>
+		<new>シ.ね</new>
+	</ngitem>
+		<ngitem>
+		<old>ｼね</old>
+		<new>ｼ.ね</new>
+	</ngitem>
+	<ngitem>
+		<old>シネ</old>
+		<new>シ.ネ</new>
+	</ngitem>
+		<ngitem>
+		<old>ｼﾈ</old>
+		<new>ｼ.ﾈ</new>
+	</ngitem>
+	<ngitem>
+		<old>ｼネ</old>
+		<new>ｼ.ネ</new>
+	</ngitem>
+	<ngitem>
+		<old>シﾈ</old>
+		<new>シ.ﾈ</new>
+	</ngitem>
+	<ngitem>
+		<old>カス</old>
+		<new>カ/ス</new>
+	</ngitem>
+	<ngitem>
+		<old>かす</old>
+		<new>か/す</new>
+	</ngitem>
+</nglist>

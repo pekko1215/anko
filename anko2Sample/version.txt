@@ -1,0 +1,34 @@
+#基本
+co278640,nicoView2.exe,やります！アンコちゃん,2015/07/30 21:55:46
+co278640,LibAnko.dll,やります！アンコちゃん補助,2015/07/30 21:55:45
+co278640,nicoView2utl.exe,やります！アンコちゃんツール,2015/06/06 20:12:05
+co278640,nicolivelistener.exe,リスナープレイヤー,2015/05/24 11:05:56
+co278640,ankoPlugin2.dll,プラグインインターフェース,2015/06/06 20:50:04
+co278640,VerupManager.exe,バージョンアップマネージャー,2015/04/12 22:36:11
+#DLL
+co278640,dll\CoreTweet.dll,ankoTwitter2.dll用,2014/04/13 6:52:37
+co278640,dll\CoreTweet.Streaming.Reactive.dll,ankoTwitter2.dll用,2014/04/13 6:52:39
+co278640,dll\System.Reactive.Core.dll,ankoTwitter2.dll用,2014/04/13 6:52:38
+co278640,dll\System.Reactive.Interfaces.dll,ankoTwitter2.dll用,2014/04/13 6:52:37
+co278640,dll\System.Reactive.Linq.dll,ankoTwitter2.dll用,2014/04/13 6:52:38
+co278640,dll\Newtonsoft.Json.dll,ankoTwitter2.dll用,2014/04/13 6:52:33
+co278640,dll\PacketDotNet.dll,おーとこねくたー用,2013/09/21 14:35:20
+co278640,dll\SharpPcap.dll,おーとこねくたー用,2013/09/21 14:35:22
+#基本プラグイン
+co278640,plugins\ankoAlert.dll,アンコあらーと,2015/06/14 13:42:28
+co278640,plugins\ankoRequester.dll,簡易リクエスタ,2015/06/14 13:42:28
+co278640,plugins\autoConnecter.dll,おーとこねくたー,2014/05/05 8:23:34
+co278640,plugins\autoResponse.dll,簡易自動応答,2014/05/19 23:52:58
+#その他
+co278640,plugins\ActiveOnlineCounter.dll,アクティブオンラインカウンタ,2014/05/05 8:23:34
+co278640,plugins\anko2Imakoko.dll,anko2今ココなう！連携,2013/09/21 14:35:20
+co278640,plugins\ankoShidan.dll,アンコ診断,2014/05/05 8:23:34
+co278640,plugins\ankoTwitter2.dll,アンコついったー,2014/05/05 8:23:34
+co278640,plugins\daretokuCounter.dll,だれとく？カウンタ,2013/09/21 14:35:22
+co278640,plugins\miniBrowser.dll,ミニ透かせるブラウザ,2013/09/21 14:35:22
+co278640,plugins\mjyoyaku.dll,予約管理,2013/09/21 14:35:20
+co278640,plugins\nyuTaiPlugin.dll,コミュニティ入退会状態監視,2013/09/21 14:35:20
+co278640,plugins\questionnaire.dll,簡易アンケート,2013/09/21 14:35:22
+co278640,plugins\sukebetuWindow.dll,透ける別ウインドウ,2014/05/05 8:23:20
+co278640,plugins\winamplayPlugin.dll,ういんあんぷれいやー,2013/09/21 14:35:22
+co278640,plugins\YukkuriWeb.dll,ゆっくりぼっと テキスト解析WebAPI版,2013/09/21 14:35:22
