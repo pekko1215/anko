@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Enq>
+  <Items>
+    <rcvText>初見</rcvText>
+    <resText>&gt;&gt;$no お茶をどうぞ</resText>
+  </Items>
+  <Items>
+    <rcvText>わこつ</rcvText>
+    <resText>&gt;&gt;$no $nicknameさんいらっしゃいませ</resText>
+  </Items>
+  <Items>
+    <rcvText>しょし</rcvText>
+    <resText>$no番しょしさんいらっしゃいませ</resText>
+  </Items>
+  <Items>
+    <rcvText>ピザ</rcvText>
+    <resText>/press show red ピザはコテハンに出来ないです アンコちゃん</resText>
+  </Items>
+  <Items>
+    <rcvText>コテハン</rcvText>
+    <resText>コテハンは@に続けて1文字以上12文字以内でお・ね・が・い</resText>
+  </Items>
+  <Items>
+    <rcvText>酒</rcvText>
+    <resText>/press show red ﾅﾝｼﾞｬﾗｱｱｱｱｱｱｱｱｱｱ アンコちゃん</resText>
+  </Items>
+  <Items>
+    <rcvText>かんぱい|カンパイ|乾杯</rcvText>
+    <resText>/press show red ﾅﾝｼﾞｬﾗｱｱｱｱｱｱｱｱｱｱ アンコちゃん</resText>
+  </Items>
+  <Items>
+    <rcvText>犬|いぬ</rcvText>
+    <resText>わんわんお</resText>
+  </Items>
+  <Items>
+    <rcvText>([^&lt;&gt;]+)(ください|下さい)</rcvText>
+    <resText>&gt;&gt;$no $2;ですどうぞ！</resText>
+  </Items>
+  <Items>
+    <rcvText>猫|ねこ</rcvText>
+    <resText>にゃんにゃんお</resText>
+  </Items>
+  <Items>
+    <rcvText>バージョンは？</rcvText>
+    <resText>$versionですぅ！</resText>
+  </Items>
+  <Items>
+    <rcvText>何時？</rcvText>
+    <resText>今の時刻は$timeです</resText>
+  </Items>
+  <Items>
+    <rcvText>うらない</rcvText>
+    <resText>ニコ生チャット色占い～&lt;br&gt;今日のあなたのラッキーカラーは(white|red|pink|orange|yellow|green|cyan|blue|purple|black|white2|red2|orange2|yellow2|green2|blue2|purple2)です。</resText>
+  </Items>
+  <Items>
+    <rcvText>(\d+)人(が|（プレミアム(\d+)人）が)</rcvText>
+    <resText>$2;名さまのコミュニティ参加ありがとうございます。</resText>
+  </Items>
+  <Items>
+    <rcvText>(?!by[a-z]+)(by|ｂｙ|[@＠])\s*([^\d@＠()][^&lt;&gt;/ ]+)</rcvText>
+    <resText>$3;さまコテハンありがとうございます</resText>
+  </Items>
+  <enableConv>true</enableConv>
+</Enq>

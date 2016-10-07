@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <item>
+    <dispTitle>Windows8での動作報告にご協力ください</dispTitle>
+    <dispText />
+    <linkUrl>http://w8.vector.jp/report.php?s_no=492615</linkUrl>
+    <bannerUrl>http://www.vector.co.jp/images/vector.gif</bannerUrl>
+    <limit>0001-01-01T00:00:00</limit>
+    <lifeCycle>o</lifeCycle>
+  </item>
+  <item>
+    <dispTitle>【めーりんプロデュースアプリ】ももいろクロックZ配布中です！！バージョン 1.0.5</dispTitle>
+    <dispText>Android無料アプリです。
+ももくろメンバーブログと、モノノフ情報サイトのRSSアドレスがあらかじめプリセットされていてこのソフトがあれば、明日からあなたも情報通！
+ももクロスケジュールや、TV放送のスケジュールも見れるし、Ustreamのアラートが、ももくろTVの放送開始を通知してくれます。
+これで、どこにいてもももいろクローバーZのみんなと一緒だよ。
+    </dispText>
+    <linkUrl>http://www.amazon.co.jp/dp/B00E1IOR2Y</linkUrl>
+    <bannerUrl>http://hp.vector.co.jp/authors/VA011428/momoiroClock.png</bannerUrl>
+    <limit>0001-01-01T00:00:00</limit>
+    <lifeCycle>o</lifeCycle>
+  </item>
+  <item>
+    <dispTitle>枠取り等が表示されない場合</dispTitle>
+    <dispText>設定が初心者用になっています。
+設定&gt;基本の設定レベルにチェックをいれてOKを一度押していただけると、使えるようになります。
+    </dispText>
+    <linkUrl />
+    <bannerUrl />
+    <limit>0001-01-01T00:00:00</limit>
+    <lifeCycle>o</lifeCycle>
+  </item>
+  <item>
+    <dispTitle>XP対応終了のお知らせです</dispTitle>
+    <dispText>
+2014 年 4 月 9 日 (日本時間) をもちまして、Windows XP、Microsoft Office 2003、Internet Explorer 6 のサポートが終了いたします。
+それに伴い、やります！アンコちゃんについてもＸＰ対応を2014 年 3 月 31 日で終了し、.NetFramework4.5.1へ移行いたします。
+Frameworkが完全に移行するまでは４月以降も起動しますが、放送主向けの機能につきましては、リスナーさんの個人情報等をお持ちの方や、メモ機能に個人情報を入れている方もいるかと思いますので、セキュリティーに懸念のある状態でのご利用はふさわしくありませんので、放送主関連機能については動作しないようにさせていただきます。
+ご理解のほどよろしくお願いいたします。
+</dispText>
+    <linkUrl></linkUrl>
+    <bannerUrl />
+    <limit>0001-01-01T00:00:00</limit>
+    <lifeCycle>v</lifeCycle>
+  </item>
+  <item>
+    <dispTitle>【おしらせ】ツイッターアカウントできました</dispTitle>
+    <dispText>
+バージョンアップのお知らせ、バージョンアップに伴う注意事項や
+便利な使い方、バグ情報などを発信していきます。
+ぜひフォローお願いします。
+質問は原則wiki掲示板に書いていただく方針には変更はありません。
+下の、インターネットリンクの部分をクリックでブラウザが開きます。
+    </dispText>
+    <linkUrl>https://twitter.com/@yarimasu_anko</linkUrl>
+    <bannerUrl/>
+    <limit>0001-01-01T00:00:00</limit>
+    <lifeCycle>o</lifeCycle>
+  </item>
+  
+ <!-- アフィリエイト　書籍買いたいのでよろしくお願いします＞＜ 
+  <item>
+    <dispTitle>I-O DATA IPX8準拠 7インチタブレット・ポータブルゲーム用防水ケース IS-WPC/M</dispTitle>
+    <dispText/>
+    <linkUrl>http://www.amazon.co.jp/gp/product/B008HFJHFE/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=B008HFJHFE&amp;linkCode=as2&amp;tag=anko001-22</linkUrl>
+    <bannerUrl>https://images-na.ssl-images-amazon.com/images/G/09/traffic/affiliate/assocbutt_or_buy._V371070157_.png</bannerUrl>
+    <limit>0001-01-01T00:00:00</limit>
+    <lifeCycle>o</lifeCycle>
+  </item>
+-->
+</root>
